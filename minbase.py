@@ -1,7 +1,5 @@
 import pygame
 
-import sys
-
 
 pygame.init()
 
@@ -10,13 +8,15 @@ screen = pygame.display.set_mode((700, 500))
 clock = pygame.time.Clock()
 
 
-while True:
+is_game_loop = True
+while is_game_loop:
 	screen.fill('#050505')
+
 
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
-			pygame.quit()
-			sys.exit()
+			is_game_loop = False
+
 
 	pygame.display.flip()
 	clock.tick(60)

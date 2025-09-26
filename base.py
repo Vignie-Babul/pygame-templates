@@ -1,7 +1,5 @@
 import pygame
 
-import sys
-
 
 pygame.init()
 
@@ -11,9 +9,9 @@ screen = pygame.display.set_mode((700, 500))
 pygame.display.set_caption('Base')
 clock = pygame.time.Clock()
 
-
 # main game loop
-while True:
+is_game_loop = True
+while is_game_loop:
 	# rendering
 	# background
 	screen.fill('#050505')
@@ -23,12 +21,10 @@ while True:
 	for event in pygame.event.get():
 		# quit
 		if event.type == pygame.QUIT:
-			pygame.quit()
-			sys.exit()
+			is_game_loop = False
 		if event.type == pygame.KEYDOWN:
 			if event.key == pygame.K_ESCAPE:
-				pygame.quit()
-				sys.exit()
+				is_game_loop = False
 
 
 	# display update
