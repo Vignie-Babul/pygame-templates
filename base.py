@@ -13,7 +13,7 @@ clock = pygame.time.Clock()
 is_game_loop = True
 while is_game_loop:
 	# rendering
-	# background
+	# background color
 	screen.fill('#050505')
 
 
