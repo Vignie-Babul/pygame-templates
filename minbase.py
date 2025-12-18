@@ -20,3 +20,7 @@ while is_game_loop:
 
 	pygame.display.flip()
 	clock.tick(60)
+
+
+pygame.quit()
+sys.exit()

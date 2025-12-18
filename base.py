@@ -1,3 +1,5 @@
+import sys
+
 import pygame
 
 
@@ -30,3 +32,7 @@ while is_game_loop:
 	# display update
 	pygame.display.flip()
 	clock.tick(60)
+
+
+pygame.quit()
+sys.exit()
