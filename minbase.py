@@ -10,7 +10,7 @@ clock = pygame.time.Clock()
 
 is_game_loop = True
 while is_game_loop:
-	screen.fill('#050505')
+	screen.fill('#000000')
 
 
 	for event in pygame.event.get():

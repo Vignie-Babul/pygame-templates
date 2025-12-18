@@ -14,7 +14,7 @@ is_game_loop = True
 while is_game_loop:
 	# rendering
 	# background color
-	screen.fill('#050505')
+	screen.fill('#000000')
 
 
 	# game events
